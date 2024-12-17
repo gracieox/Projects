@@ -5,6 +5,7 @@
 import DrawingPanel
 
 drive = DrawingPanel.DrawingPanel (800,600)
+
 def background():
     drive.fill_rect(0,0,800,600,'white')
     drive.fill_rect(0,426,800,400,'dark green')
@@ -21,15 +22,14 @@ def car (x,y):
 
 def kid ():
     drive.fill_rect(550,400,10,25,'brown')
-    #drive.fill_polygon(
     drive.fill_oval(550,390,10,10,'brown')
     
 x = 0
 for i in range (50):
-    drive.sleep(1000/60)  
+    drive.sleep(1000/60)
     y = 400
     x = x+10
     background()
     kid()
     car(x,y)
-    
+
